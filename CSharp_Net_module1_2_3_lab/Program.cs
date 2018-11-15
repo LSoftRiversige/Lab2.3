@@ -11,6 +11,7 @@ namespace CSharp_Net_module1_2_3_lab
         static void Main(string[] args)
         {
 
+            #region  body
             // 10) declare 2 objects
             Money m1 = new Money(1000.76m, EnumCurrencyTypes.UAH);
             Money m2 = new Money(1500.45m, EnumCurrencyTypes.UAH);
@@ -49,6 +50,7 @@ namespace CSharp_Net_module1_2_3_lab
 
             // convert 1st object of Money to string
             Console.WriteLine($"m1={(string)m1}");
+            #endregion body
 
             Console.WriteLine("Press any key...");
             Console.ReadKey();
