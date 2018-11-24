@@ -104,6 +104,28 @@ namespace CSharp_Net_module1_2_3_lab
         {
             return $"{m.Amount} {m.CurrencyType}";
         }
+        /*
+полный вариант
+  public static implicit operator string(Money money)
+        {
+           
+            return $"{money.CurrencyType.ToString()} {money.Amount}";
+        }
 
+        //и вайса верса
+        public static implicit operator Money(string value)
+        {
+           
+            // Enum.Parse - механизм приведения строки к енумке: в метод передали тип и строку, на выходе получили object который привели к нужному типу
+            //string.Split() - получения массива стрингов по разделителю (пробел, запятая и т.п.)
+            //value.Split()[0] вернет нам значение до пробела
+            //value.Split()[1] вернет нам значение после пробела
+            string strCur = value.Split()[0];
+            CurrencyTypes currency = (CurrencyTypes)Enum.Parse(typeof(CurrencyTypes), strCur);
+            string strAmount = value.Split()[1];
+            decimal amount = decimal.Parse(strAmount);
+            return new Money(amount, currency);
+        }
+		*/
     }
 }
