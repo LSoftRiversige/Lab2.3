@@ -45,8 +45,8 @@ namespace CSharp_Net_module1_2_3_lab
             if (m2 > "200,45") { Console.WriteLine("m2 > 200,45"); }
 
             // check CurrencyType of every object
-            if (m1) { Console.WriteLine("m1 is UAH"); }
-            if (m2) { Console.WriteLine("m2 is UAH"); }
+            if (m1) { Console.WriteLine("m1 specified"); }
+            if (m2) { Console.WriteLine("m2 is specified"); }
 
             // convert 1st object of Money to string
             Console.WriteLine($"m1={(string)m1}");

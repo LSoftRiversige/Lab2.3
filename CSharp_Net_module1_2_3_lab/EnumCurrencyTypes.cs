@@ -8,6 +8,9 @@ namespace CSharp_Net_module1_2_3_lab
 {
     public enum EnumCurrencyTypes
     {
-        UAH, USD, EU
+        Unspecified,
+        UAH,
+        USD,
+        EUR
     }
 }
